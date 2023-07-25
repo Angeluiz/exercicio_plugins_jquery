@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos EBAC</title>
+
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>Cursos EBAC - Cadastro de novo aluno</h1>
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container container-flex">
+                <ul>
+                    <li>
+                        <a href="#sobre-escola">Sobre a escola</a>
+                    </li>
+                    <li>
+                        <a href="#lista-cursos">Lista de Cursos</a>
+                    </li>
+                    <li>
+                        <a href="#cadastro-aluno">Cadastro de aluno</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="carousel-imagens">
+        <img src="./images/entrada.jpg" alt="Entrada escola">
+        <img src="./images/ebac_1.jpg" alt="Sala de aula">
+        <img src="./images/sala2.png" alt="Sala de reunião">
+    </div>
+
+    <section id="sobre-escola">
+        <div class="container container-flex">
+            <div>
+                <h2>Sobre a EBAC Online</h2>
+                <p>A Escola Britânica de Artes Criativas & Tecnologia (EBAC) é uma instituição de ensino inovadora que oferece cursos online, além de programas de pós-graduação e especialização. Foi fundada em 2016 em uma parceria com a University of Hertfordshire, uma das instituições de ensino mais renomadas do Reino Unido. Em 2021 e 2022, fomos reconhecidos como uma das 100 edtechs mais promissoras da América Latina.</p>
+                <p>Com um corpo docente formado por excelentes profissionais atuantes no mercado do Brasil e Latam, nossa escola oferece um novo modelo de ensino das disciplinas que envolvem criatividade, tecnologia, marketing, audiovisual e negócios, além de uma série de iniciativas que preparam o aluno para sua inserção no mercado de trabalho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lista-cursos">
+        <div class="container container-cursos">
+            <h2>Lista de cursos</h2>
+            <ul class="container-flex lista-cursos">
+                <li>
+                    <img src="./images/TI-ZERO_PRO.png" alt="TI do Zero ao Pro">
+                    <h3>TI do Zero ao Pro</h3>
+                    <p>No curso, você vai se aprofundar nas 5 profissões mais populares da TI e, então, poderá escolher aquela que gostou mais</p>
+                    <div class="price">
+                        <strong>R$ 5.999,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/FullStack_Python.png" alt="FullStack Python">
+                    <h3>FullStack Python</h3>
+                    <p>Torne-se um dos profissionais mais requisitados do mercado com Full Stack!</p>
+                    <div class="price">
+                        <strong>R$ 4.533,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/FullStack_Java.png" alt="FullStack Java">
+                    <h3>FullStack Java</h3>
+                    <p>Torne-se um programador capaz de conduzir todos os estágios de desenvolvimento de softwares.</p>
+                    <div class="price">
+                        <strong>R$ 4.533,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/Engenheiro_Front-end.png" alt="Engenheiro Front-end">
+                    <h3>Engenheiro Front-end</h3>
+                    <p>Desenvolvedor Front-End: uma profissão promissora e bem paga</p>
+                    <div class="price">
+                        <strong>R$ 4.533,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/Cientista-Dados.png" alt="Cientista de Dados">
+                    <h3>Cientista de Dados</h3>
+                    <p>Cientista de Dados: Alta demanda e crescente oferta</p>
+                    <div class="price">
+                        <strong>R$ 5.694,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./images/Engenheiro_Qualidade.png" alt="Engenheiro Qualidade">
+                    <h3>Engenheiro de Qualidade de Software</h3>
+                    <p>Torne-se um Engenheiro de Qualidade e comece uma carreira promissora e bem paga em TI mesmo sem conhecimento prévio em programação.</p>
+                    <div class="price">
+                        <strong>R$ 5.335,00</strong>
+                    </div>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="cadastro-aluno">
+        <div class="container">
+            <h2>Faça o seu cadastro no curso escolhido</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="curso-interesse">Curso de interesse:</label>
+                    <input type="text" id="curso-interesse" name="cursointeresse" placeholder="Ex: FullStack Python">
+                </div>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="aluno@ebac.com.br">
+                </div>
+                <div class="form-campo">
+                    <label for="endereco">Endereço completo:</label>
+                    <input type="text" id="endereco" name="endereco">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p>2023 &copy; Cursos EBAC - Todos os direitos reservados</p> 
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script> <!--Chamar o script do Mask-->
+    <script src="./js/jquery.validate.min.js"></script> <!--Chamar o script do Validation-->
+    <script src="./js/messages_pt_BR.min.js"></script> <!--Chamar o script de mensagen em PT-BR do Validation-->
+    <script src="./js/main.js"></script>
+</body>
+</html>

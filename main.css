@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden; /*Diz que todo conteudo que esta na horizontal (x) será escondido, colocado no html para apicar isso em todo site*/
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #192a56;
+    padding-top: 16px;
+    color: #fff; 
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1; /*Este comando evita a concorrencia do header com o slide, header tem padrão 0, adicionando o comando o header ganha na concorrencia na hora de aparecer*/
+}
+
+header > .container,
+footer > .container { /* Utiliza > para selecionar um filho direto, neste caso o primeiro .container dentro de header */
+    justify-content: space-between;
+    align-items: center; /* alinhar os elementos na vertical */
+    padding-bottom: 16px;
+}
+
+#carousel-imagens img {
+    max-height: 620px;
+    height: 100%;
+}
+
+nav {
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none; /* Remover a bolinha da lista */
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none; /*Remover a linha dos links*/
+}
+
+.menu-hamburger {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+p,
+h2,
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+#sobre-escola p {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+#lista-cursos {
+    background-color: #7892d4;
+}
+
+.lista-cursos {
+    flex-wrap: wrap; /*Comando para quebrara a linha*/
+}
+
+.lista-cursos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 34px;
+    margin-top: 20px;
+}
+
+.lista-cursos li img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.lista-cursos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px; /*Adicionar uma bordar arredondada*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+#cadastro-aluno form {
+    background-color: #192a56;
+    padding: 34px;
+    border-radius: 6px;
+    max-width: 500px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-campo input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+form {
+    max-width: 320px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
